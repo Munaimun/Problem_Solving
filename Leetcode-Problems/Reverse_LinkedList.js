@@ -8,7 +8,7 @@ var reverseList = function (head) {
   let prevNodePtr = null;
   let nextPtr;
 
-  while (current !== null) {
+  while (currentNode !== null) {
     nextPtr = currentNode.next;
     currentNode.next = prevNodePtr;
     prevNodePtr = currentNode;
