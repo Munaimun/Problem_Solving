@@ -1,42 +1,30 @@
 // 82. Remove Duplicates from Sorted List II
 // Given the head of a sorted linked list, delete all nodes that have duplicate numbers, leaving only distinct numbers from the original list. Return the linked list sorted as well.
 
-/**
- * Definition for singly-linked list.
- * function ListNode(val, next) {
- *     this.val = (val===undefined ? 0 : val)
- *     this.next = (next===undefined ? null : next)
- * }
- */
-/**
- * @param {ListNode} head
- * @return {ListNode}
- */
 
 // Solution
 const deleteDuplicates = (head) => {
     if (!head) return null;
 
-    let dummy = new ListNode(-Infinity, head); // Dummy node to handle edge cases
+    let dummy = new ListNode(-Infinity, head);
     let prev = dummy;
     let cur = head;
 
     while (cur) {
-        // Check if current node has duplicates
-        if (cur.next && cur.val === cur.next.val) {
-            // Skip all nodes with the same value
-            while (cur.next && cur.val === cur.next.val) {
-                cur = cur.next;
+        let next = cur.next;
+
+        // If cur has duplicates, skip all duplicates
+        if (next && cur.val === next.val) {
+            while (next && next.val === cur.val) {
+                next = next.next;
             }
-            // Link prev to the node after the duplicates
-            prev.next = cur.next;
+            prev.next = next; // Skip all duplicates
         } else {
-            // No duplicates, move prev pointer
-            prev = cur;
+            prev = cur; // Move prev forward only if no duplicates
         }
-        // Move cur pointer
-        cur = cur.next;
+        cur = next; // Move cur forward
     }
 
     return dummy.next;
 };
+
