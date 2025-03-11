@@ -13,11 +13,11 @@ const strStr = (haystack, needle) => {
     // If haystack and needle are the same, or needle is an empty string, return 0
     if (haystack === needle || needle.length === 0) return 0;
 
-    for (let i = 0; i < haystack.length; i++) {
+    for (let i = 0; i < haystack.length - needle.length; i++) {
         // Check if the current character in haystack matches the first character of needle
         if (haystack[i] === needle[0]) {
             // Extract a substring from haystack starting at index i with a length of needle
-            let sub = haystack.substring(i, needle.length);
+            let sub = haystack.substring(i, i + needle.length);
 
             // Compare the extracted substring with needle
             if (sub === needle) {
