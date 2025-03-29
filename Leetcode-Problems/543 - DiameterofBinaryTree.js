@@ -30,6 +30,7 @@ const diameterOfBinaryTree = (root) => {
         // Update max diameter: Sum of left and right subtree heights at this node.
         max = Math.max(left + right, max);
 
+
         // Return the height of the current node's subtree (1 + max child height).
         return Math.max(left, right) + 1;
     };
