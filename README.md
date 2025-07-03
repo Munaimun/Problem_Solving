@@ -18,8 +18,14 @@ Feel free to contribute by:
 - Improving existing solutions with optimized approaches.
 - Enhancing documentation with better explanations.
 
+## 🌐 Profiles
+- 🔗 [LeetCode](https://leetcode.com/u/Munaimun/)
+- 🔗 [CodeChef](https://www.codechef.com/users/bruce_wayne23)
+- 🔗 [Codeforces](https://codeforces.com/profile/munaimun_1948)
+
 ## 📜 License
 This repository is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ---
+
 **Maintained by:** [Munaimun Bari Fahad](https://www.munaimunz.me)
