@@ -1,7 +1,7 @@
-# LeetCode Problem-Solving Repository
+# Problem-Solving Repository
 
 ## 🚀 Overview
-This repository contains my solutions to LeetCode problems. The goal is to improve problem-solving skills, strengthen algorithmic thinking, and prepare for technical interviews.
+This repository contains my solutions to various coding problems and algorithmic challenges. The goal is to improve problem-solving skills, strengthen algorithmic thinking, and prepare for technical interviews.
 
 Each file contains:
 - **Problem Statement:** A brief description of the problem.
