@@ -51,7 +51,7 @@ int main()
 {
     Solution s;
 
-    // Example: n=1 → only one valid result "()"
+    // Example: n=1 → only one valid result "()" 
     vector<string> res = s.generateParenthesis(1);
 
     for (auto i : res)

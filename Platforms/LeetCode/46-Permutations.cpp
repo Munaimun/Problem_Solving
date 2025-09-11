@@ -1,4 +1,13 @@
-#include <bits/stdc++.h>  // Includes all standard C++ libraries (like vector, iostream, etc.)
+/*
+Time Complexity: O(n * n!) 
+    - There are n! permutations for n elements.
+    - Copying each permutation to the result takes O(n) time.
+Space Complexity: O(n * n!) including output
+    - Auxiliary space: O(n) for recursion stack + cur + used
+    - Result array stores n! permutations of size n → O(n * n!)
+*/
+
+#include <bits/stdc++.h>
 using namespace std;
 
 class Solution
