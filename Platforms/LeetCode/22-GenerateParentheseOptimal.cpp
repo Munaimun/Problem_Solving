@@ -23,12 +23,18 @@ public:
         }
 
         // Choice 1: Add an opening bracket if we still have some left
-        if (opening < n)
-            solve(n, cur + '(', opening + 1, closing, ans);
+        if (opening < n){
+            cur.push_back('(');
+            solve(n, cur, opening + 1, closing, ans);
+            cur.pop_back();
+        }
 
         // Choice 2: Add a closing bracket if it's valid (closing < opening)
-        if (closing < opening)
-            solve(n, cur + ')', opening, closing + 1, ans);
+        if (closing < opening){
+            cur.push_back(')');
+            solve(n, cur, opening, closing + 1, ans);
+            cur.pop_back();
+        }
     }
 
     // Main function to generate parentheses
