@@ -1,6 +1,5 @@
 // ============================================================================
 // Problem: Binary Tree Inorder Traversal
-// Language: C++
 // Time Complexity: O(n)  — every node is visited once
 // Space Complexity: O(n) — recursion stack + output array
 //

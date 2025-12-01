@@ -1,6 +1,5 @@
 // ============================================================================
 // Problem: Binary Tree Postorder Traversal
-// Language: C++
 // Time Complexity: O(n)  — each node is visited exactly once
 // Space Complexity: O(n) — recursion stack + output array
 //
